@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev docs --host 127.0.0.1",
+    "docs:build": "npm run book:build && vitepress build docs",
+    "docs:preview": "vitepress preview docs --host 127.0.0.1",
+    "book:build": "node scripts/build-book.mjs",
+    "book:pdf": "npm run docs:build && node scripts/export-pdf.mjs"
+  },
+  "devDependencies": {
+    "markdown-it": "^14.1.0",
+    "playwright": "^1.54.2",
+    "vitepress": "^1.6.4"
+  }
+}
