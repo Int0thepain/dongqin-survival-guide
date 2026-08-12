@@ -2,11 +2,20 @@
 
 > 基于《东北大学(秦皇岛)2026届新生入学生活指南.pdf》整理的 Markdown 归档版。
 
+**在线阅读**：[https://int0thepain.github.io/dongqin-survival-guide/](https://int0thepain.github.io/dongqin-survival-guide/)
+
+**下载 PDF**：[dongqin-survival-guide.pdf](https://int0thepain.github.io/dongqin-survival-guide/downloads/dongqin-survival-guide.pdf)
+
 本仓库适合继续扩展为班级版、年级版或公开网页版生存手册。当前内容先按主题拆分，方便后续在 GitHub、GitHub Pages、VitePress 或其他文档站中维护。
 
 ## 网站预览
 
-本项目已配置为 VitePress 文档站。
+本项目已配置为 VitePress 文档站，公开网页地址为：
+
+- [东秦生存手册在线阅读](https://int0thepain.github.io/dongqin-survival-guide/)
+- [提交反馈或补充](https://github.com/Int0thepain/dongqin-survival-guide/issues)
+
+本地预览：
 
 ```powershell
 npm install
