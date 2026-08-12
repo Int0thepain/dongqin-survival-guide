@@ -2,6 +2,9 @@ import { defineConfig } from 'vitepress'
 
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'dongqin-survival-guide'
 const base = process.env.VITEPRESS_BASE ?? (process.env.GITHUB_ACTIONS ? `/${repoName}/` : '/')
+const siteUrl = 'https://int0thepain.github.io/dongqin-survival-guide'
+const repoUrl = 'https://github.com/Int0thepain/dongqin-survival-guide'
+const pdfUrl = `${siteUrl}/downloads/dongqin-survival-guide.pdf`
 
 export default defineConfig({
   title: '东秦生存手册',
@@ -16,8 +19,9 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: '阅读指南', link: '/00-项目说明与更新规则' },
       { text: '全书阅读', link: '/book-print' },
-      { text: '下载 PDF', link: '/downloads/dongqin-survival-guide.pdf' },
-      { text: '待补充', link: '/TODO-可补充内容' }
+      { text: '下载 PDF', link: pdfUrl },
+      { text: '待补充', link: '/TODO-可补充内容' },
+      { text: 'GitHub 仓库', link: repoUrl }
     ],
     sidebar: [
       {
@@ -80,8 +84,6 @@ export default defineConfig({
       text: '最后更新'
     },
     editLink: false,
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/Int0thepain/dongqin-survival-guide' }
-    ]
+    socialLinks: []
   }
 })

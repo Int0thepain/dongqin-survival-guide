@@ -14,7 +14,7 @@ hero:
       link: /book-print
     - theme: alt
       text: 下载 PDF
-      link: /downloads/dongqin-survival-guide.pdf
+      link: https://int0thepain.github.io/dongqin-survival-guide/downloads/dongqin-survival-guide.pdf
     - theme: alt
       text: 补充清单
       link: /TODO-可补充内容
@@ -45,6 +45,7 @@ features:
 如果你想补充内容、纠错，或提供新的经验材料，欢迎通过以下方式反馈：
 
 - GitHub Issues：[提交反馈或补充](https://github.com/Int0thepain/dongqin-survival-guide/issues)
+- GitHub 仓库：[查看网站源码](https://github.com/Int0thepain/dongqin-survival-guide)
 - QQ 小号：`3025363587`
 
 添加 QQ 时请备注“东秦生存手册 + 来意”，例如“宿舍信息补充”“食堂纠错”“投稿建议”。
