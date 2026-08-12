@@ -42,8 +42,11 @@ features:
 
 ## 联系我们
 
-如果你想补充内容、纠错，或提供新的经验材料，推荐通过 GitHub Issues 留言：
+如果你想补充内容、纠错，或提供新的经验材料，欢迎通过以下方式反馈：
 
-[提交反馈或补充](https://github.com/Int0thepain/dongqin-survival-guide/issues)
+- GitHub Issues：[提交反馈或补充](https://github.com/Int0thepain/dongqin-survival-guide/issues)
+- QQ 小号：`3025363587`
 
-为了避免个人联系方式被公开传播，首页暂不放私人 QQ、手机号或微信号。班级内部联系方式建议放在非公开文档或班级群公告中。
+添加 QQ 时请备注“东秦生存手册 + 来意”，例如“宿舍信息补充”“食堂纠错”“投稿建议”。
+
+为避免个人隐私泄露，请不要在公开页面或陌生私聊中提交身份证号、学号、手机号、宿舍号等敏感信息。
