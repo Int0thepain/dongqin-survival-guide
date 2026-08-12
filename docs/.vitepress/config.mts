@@ -79,12 +79,9 @@ export default defineConfig({
     lastUpdated: {
       text: '最后更新'
     },
-    editLink: {
-      pattern: 'https://github.com/:owner/:repo/edit/main/docs/:path',
-      text: '在 GitHub 上编辑本页'
-    },
+    editLink: false,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' }
+      { icon: 'github', link: 'https://github.com/Int0thepain/dongqin-survival-guide' }
     ]
   }
 })
