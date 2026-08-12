@@ -37,3 +37,12 @@
   font-weight: 700;
 }
 
+.VPLocalSearchBox {
+  z-index: 9999 !important;
+}
+
+.VPLocalSearchBox .shell,
+.VPLocalSearchBox .search-bar,
+.VPLocalSearchBox .search-input {
+  pointer-events: auto;
+}
