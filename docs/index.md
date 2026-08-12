@@ -52,5 +52,8 @@ features:
 
 - GitHub Issues：[提交反馈或补充](https://github.com/Int0thepain/dongqin-survival-guide/issues)
 - GitHub 仓库：[查看网站源码](https://github.com/Int0thepain/dongqin-survival-guide)
+- QQ：`3025363587`
 
-为避免个人隐私泄露，请不要在公开 Issue 或公开页面中提交身份证号、学号、手机号、宿舍号等敏感信息。
+通过 QQ 联系时，请备注“东秦生存手册 + 来意”，例如“宿舍信息补充”“食堂纠错”“投稿建议”。
+
+为避免个人隐私泄露，请不要在公开 Issue、公开页面或陌生私聊中提交身份证号、学号、手机号、宿舍号等敏感信息。
