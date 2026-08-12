@@ -59,6 +59,12 @@ PDF 输出位置：`docs/.vitepress/dist/downloads/dongqin-survival-guide.pdf`�
 - 原始抽取文本：`archive/original-extracted-text.md`
 - 附件图片：`assets/images/`
 
+## 许可证
+
+本项目正文内容采用 [CC BY-NC-SA 4.0](LICENSE) 授权：允许分享和改编，但需注明来源、不得用于商业用途，并以相同方式共享。
+
+学校官方通知、规章制度、系统信息、地图图片、第三方材料等，其版权和解释权仍归原权利人所有。
+
 ## 维护建议
 
 - 日常编辑使用 Markdown。
