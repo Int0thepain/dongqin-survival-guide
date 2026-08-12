@@ -176,6 +176,50 @@ const html = `<!doctype html>
       border-left: 3px solid #244c8f;
     }
 
+    .notice-danger {
+      margin: 5mm 0 7mm;
+      padding: 4mm 5mm;
+      color: #b42318;
+      background: #fff1f0;
+      border-left: 4px solid #d92d20;
+      border-radius: 3mm;
+      font-weight: 700;
+      page-break-inside: avoid;
+    }
+
+    .notice-danger h2,
+    .notice-danger h3,
+    .notice-danger h4 {
+      margin-top: 0;
+      color: #b42318;
+      border-bottom: none;
+      page-break-before: auto;
+    }
+
+    .notice-danger p:last-child {
+      margin-bottom: 0;
+    }
+
+    .mark-red {
+      color: #b42318;
+      font-weight: 700;
+    }
+
+    .mark-blue {
+      color: #155eef;
+      font-weight: 700;
+    }
+
+    .mark-green {
+      color: #067647;
+      font-weight: 700;
+    }
+
+    .mark-purple {
+      color: #6941c6;
+      font-weight: 700;
+    }
+
     ul, ol {
       margin: 0 0 4mm 6mm;
       padding-left: 6mm;

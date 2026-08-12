@@ -1,0 +1,39 @@
+.vp-doc .notice-danger {
+  margin: 24px 0;
+  padding: 18px 22px;
+  color: #b42318;
+  background: #fff1f0;
+  border-left: 5px solid #d92d20;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.vp-doc .notice-danger h2 {
+  margin-top: 0;
+  color: #b42318;
+}
+
+.vp-doc .notice-danger p:last-child {
+  margin-bottom: 0;
+}
+
+.vp-doc .mark-red {
+  color: #b42318;
+  font-weight: 700;
+}
+
+.vp-doc .mark-blue {
+  color: #155eef;
+  font-weight: 700;
+}
+
+.vp-doc .mark-green {
+  color: #067647;
+  font-weight: 700;
+}
+
+.vp-doc .mark-purple {
+  color: #6941c6;
+  font-weight: 700;
+}
+
