@@ -7,17 +7,17 @@ hero:
   tagline: 从报到、宿舍、食堂、校园网到选课和生活服务，把新生最容易卡住的地方整理成可以持续更新的网页。
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /00-项目说明与更新规则
+      text: 新生入口
+      link: /02-报到入学
+    - theme: alt
+      text: 宿舍速查
+      link: /13-宿舍详解与选择建议
     - theme: alt
       text: 全书阅读
       link: /book-print
     - theme: alt
       text: 下载 PDF
       link: https://int0thepain.github.io/dongqin-survival-guide/downloads/dongqin-survival-guide.pdf
-    - theme: alt
-      text: 补充清单
-      link: /TODO-可补充内容
 
 features:
   - title: 入学篇
@@ -29,6 +29,25 @@ features:
   - title: 全书版
     details: 自动合并章节，支持连续阅读、浏览器打印和 PDF 下载。
 ---
+
+<p class="mobile-quick-title">手机快速入口</p>
+
+<div class="mobile-quick">
+  <a href="./02-报到入学">报到入学</a>
+  <a href="./13-宿舍详解与选择建议">宿舍</a>
+  <a href="./05-饮食指南">食堂</a>
+  <a href="./03-军训与智慧校园">校园卡/军训</a>
+  <a href="./14-学习选课与成绩FAQ">选课成绩</a>
+  <a href="./15-生活常见问题">生活 FAQ</a>
+  <a href="./16-校园社群与信息渠道">信息渠道</a>
+  <a href="./TODO-可补充内容">待补充</a>
+</div>
+
+<div class="mobile-bottom-actions">
+  <a href="./book-print">全书</a>
+  <button type="button" onclick="document.querySelector('.DocSearch-Button')?.click()">搜索</button>
+  <a href="https://int0thepain.github.io/dongqin-survival-guide/downloads/dongqin-survival-guide.pdf">PDF</a>
+</div>
 
 ## 当前状态
 

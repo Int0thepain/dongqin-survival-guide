@@ -46,3 +46,132 @@
 .VPLocalSearchBox .search-input {
   pointer-events: auto;
 }
+
+.mobile-quick-title,
+.mobile-quick,
+.mobile-bottom-actions {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .VPHero {
+    padding-top: 58px !important;
+    padding-bottom: 22px !important;
+  }
+
+  .VPHero .name {
+    max-width: 100%;
+    font-size: 34px !important;
+    line-height: 1.12 !important;
+  }
+
+  .VPHero .text {
+    max-width: 100%;
+    font-size: 31px !important;
+    line-height: 1.16 !important;
+  }
+
+  .VPHero .tagline {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+  }
+
+  .VPHero .actions {
+    gap: 10px !important;
+  }
+
+  .VPHero .actions .action {
+    flex: 1 1 calc(50% - 8px);
+  }
+
+  .VPHero .actions .VPButton {
+    width: 100%;
+    min-width: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+  }
+
+  .VPHomeFeatures {
+    display: none !important;
+  }
+
+  .mobile-quick-title {
+    display: block;
+    margin: 8px 0 12px;
+    color: var(--vp-c-text-1);
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .mobile-quick {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0 0 26px;
+  }
+
+  .mobile-quick a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    padding: 10px 12px;
+    color: var(--vp-c-text-1);
+    font-weight: 700;
+    text-decoration: none;
+    background: var(--vp-c-bg-soft);
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 8px;
+  }
+
+  .mobile-quick a:active {
+    color: var(--vp-c-brand-1);
+    border-color: var(--vp-c-brand-1);
+  }
+
+  .mobile-bottom-actions {
+    position: fixed;
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    z-index: 60;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    padding: 8px;
+    background: color-mix(in srgb, var(--vp-c-bg) 92%, transparent);
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(30, 41, 59, 0.18);
+    backdrop-filter: blur(12px);
+  }
+
+  .mobile-bottom-actions a,
+  .mobile-bottom-actions button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    color: var(--vp-c-text-1);
+    font: inherit;
+    font-weight: 700;
+    text-decoration: none;
+    background: var(--vp-c-bg-soft);
+    border: 1px solid transparent;
+    border-radius: 8px;
+  }
+
+  .mobile-bottom-actions a:first-child {
+    color: #fff;
+    background: var(--vp-c-brand-1);
+  }
+
+  .mobile-bottom-actions button {
+    cursor: pointer;
+  }
+
+  .VPContent {
+    padding-bottom: 82px;
+  }
+}
