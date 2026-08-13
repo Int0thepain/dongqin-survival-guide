@@ -71,7 +71,7 @@ features:
 
 - GitHub Issues：[提交反馈或补充](https://github.com/Int0thepain/dongqin-survival-guide/issues)
 - GitHub 仓库：[查看网站源码](https://github.com/Int0thepain/dongqin-survival-guide)
-- QQ：`3025363587`
+- QQ：`3010383177`
 
 通过 QQ 联系时，请备注“东秦生存手册 + 来意”，例如“宿舍信息补充”“食堂纠错”“投稿建议”。
 
