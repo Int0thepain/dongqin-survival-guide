@@ -13,6 +13,9 @@ export default defineConfig({
   base,
   cleanUrls: true,
   lastUpdated: true,
+  appearance: {
+    initialValue: 'light'
+  },
   themeConfig: {
     logo: '/images/campus-map.png',
     nav: [
