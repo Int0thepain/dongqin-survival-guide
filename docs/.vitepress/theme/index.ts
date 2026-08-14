@@ -3,6 +3,8 @@ import { onMounted, watch, ref } from 'vue'
 import { useData } from 'vitepress'
 import './custom.css'
 
+const zoomableImageSelector = '.zoomable-map, a[href*="campus-map-landscape"]'
+
 function focusLocalSearchInput() {
   const input = document.querySelector<HTMLInputElement>('#localsearch-input, .search-input')
   input?.focus()
@@ -75,7 +77,7 @@ function setupReadingProgress() {
 function setupZoomableImages() {
   document.addEventListener('click', (event) => {
     const target = event.target as HTMLElement | null
-    const link = target?.closest<HTMLAnchorElement>('.zoomable-map, a[href*="campus-map-landscape"]')
+    const link = target?.closest<HTMLAnchorElement>(zoomableImageSelector)
     const heroImage = target?.closest<HTMLImageElement>('.VPHero .image-src')
 
     if (!link && !heroImage) return
@@ -89,9 +91,37 @@ function setupZoomableImages() {
     const overlay = document.createElement('div')
     overlay.className = 'image-lightbox'
     overlay.innerHTML = `
-      <button class="image-lightbox-close" type="button" aria-label="关闭大图">×</button>
-      <img src="${src}" alt="${image?.alt ?? '放大图片'}" />
+      <div class="image-lightbox-toolbar" role="toolbar" aria-label="图片缩放工具">
+        <button class="image-lightbox-zoom-out" type="button" aria-label="缩小">−</button>
+        <span class="image-lightbox-zoom-value">100%</span>
+        <button class="image-lightbox-zoom-in" type="button" aria-label="放大">＋</button>
+        <button class="image-lightbox-reset" type="button">重置</button>
+        <button class="image-lightbox-close" type="button" aria-label="关闭大图">×</button>
+      </div>
+      <div class="image-lightbox-stage">
+        <img src="${src}" alt="${image?.alt ?? '放大图片'}" />
+      </div>
     `
+
+    const lightboxImage = overlay.querySelector<HTMLImageElement>('.image-lightbox-stage img')
+    const zoomValue = overlay.querySelector<HTMLElement>('.image-lightbox-zoom-value')
+    let scale = 1
+
+    const updateScale = () => {
+      if (!lightboxImage || !zoomValue) return
+      lightboxImage.style.transform = `scale(${scale})`
+      zoomValue.textContent = `${Math.round(scale * 100)}%`
+    }
+
+    const zoom = (delta: number) => {
+      scale = Math.min(5, Math.max(0.25, Number((scale + delta).toFixed(2))))
+      updateScale()
+    }
+
+    const resetZoom = () => {
+      scale = 1
+      updateScale()
+    }
 
     const close = () => {
       overlay.remove()
@@ -101,18 +131,43 @@ function setupZoomableImages() {
 
     const onKeydown = (keyboardEvent: KeyboardEvent) => {
       if (keyboardEvent.key === 'Escape') close()
+      if ((keyboardEvent.key === '+' || keyboardEvent.key === '=') && !keyboardEvent.ctrlKey) zoom(0.25)
+      if (keyboardEvent.key === '-' && !keyboardEvent.ctrlKey) zoom(-0.25)
+      if (keyboardEvent.key === '0') resetZoom()
     }
 
     overlay.addEventListener('click', (clickEvent) => {
       const clicked = clickEvent.target as HTMLElement
+      if (clicked.closest('.image-lightbox-zoom-in')) {
+        zoom(0.25)
+        return
+      }
+      if (clicked.closest('.image-lightbox-zoom-out')) {
+        zoom(-0.25)
+        return
+      }
+      if (clicked.closest('.image-lightbox-reset')) {
+        resetZoom()
+        return
+      }
       if (clicked === overlay || clicked.closest('.image-lightbox-close')) {
         close()
       }
     })
 
+    overlay.addEventListener(
+      'wheel',
+      (wheelEvent) => {
+        wheelEvent.preventDefault()
+        zoom(wheelEvent.deltaY < 0 ? 0.15 : -0.15)
+      },
+      { passive: false }
+    )
+
     document.body.appendChild(overlay)
     document.body.classList.add('image-lightbox-open')
     document.addEventListener('keydown', onKeydown)
+    updateScale()
   })
 }
 

@@ -453,39 +453,83 @@ html {
   position: fixed;
   inset: 0;
   z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 28px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 14px;
+  padding: 16px;
   background: rgba(15, 23, 42, 0.86);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   cursor: zoom-out;
 }
 
-.image-lightbox img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: min(96vw, 1600px);
-  max-height: 92vh;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+.image-lightbox-toolbar {
+  justify-self: center;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.28);
   cursor: default;
 }
 
-.image-lightbox-close {
-  position: fixed;
-  top: 14px;
-  right: 18px;
-  width: 42px;
-  height: 42px;
-  border: 1px solid rgba(255, 255, 255, 0.35);
+.image-lightbox-toolbar button {
+  min-width: 38px;
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 999px;
   color: #fff;
-  background: rgba(15, 23, 42, 0.72);
-  font-size: 28px;
-  line-height: 1;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+  font-weight: 700;
   cursor: pointer;
+}
+
+.image-lightbox-toolbar button:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.image-lightbox-zoom-value {
+  min-width: 58px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.image-lightbox-stage {
+  min-height: 0;
+  overflow: auto;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  overscroll-behavior: contain;
+  cursor: grab;
+}
+
+.image-lightbox-stage img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(92vw, 1600px);
+  max-height: 82vh;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  cursor: zoom-in;
+  transform-origin: center center;
+  transition: transform 0.12s ease-out;
+}
+
+.image-lightbox-close {
+  font-size: 22px !important;
+  line-height: 1 !important;
 }
 
 /* 分隔线 */
@@ -902,9 +946,24 @@ html {
     padding: 12px;
   }
 
-  .image-lightbox img {
+  .image-lightbox-toolbar {
+    max-width: 100%;
+    justify-self: stretch;
+    overflow-x: auto;
+    border-radius: 14px;
+  }
+
+  .image-lightbox-toolbar button {
+    flex: 0 0 auto;
+  }
+
+  .image-lightbox-stage {
+    padding: 0;
+  }
+
+  .image-lightbox-stage img {
     max-width: 98vw;
-    max-height: 86vh;
+    max-height: 80vh;
   }
 }
 
