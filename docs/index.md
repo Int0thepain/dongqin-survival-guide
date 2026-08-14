@@ -6,7 +6,7 @@ hero:
   text: 东北大学秦皇岛校区新生生活指南
   tagline: 从报到入学到宿舍食堂，从校园网到选课攻略，帮你快速适应校园生活，持续更新的实用手册。
   image:
-    src: /images/campus-map-landscape.png
+    src: /images/campus-map-official.jpg
     alt: 校园地图
   actions:
     - theme: brand

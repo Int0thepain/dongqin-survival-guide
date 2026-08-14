@@ -415,7 +415,8 @@ html {
 }
 
 .vp-doc .zoomable-map,
-.vp-doc a[href*="campus-map-landscape"] {
+.vp-doc a[href*="campus-map-landscape"],
+.vp-doc a[href*="campus-map-official"] {
   display: block;
   margin: 22px 0 10px;
   color: var(--vp-c-text-2);
@@ -424,7 +425,8 @@ html {
 }
 
 .vp-doc .zoomable-map img,
-.vp-doc a[href*="campus-map-landscape"] img {
+.vp-doc a[href*="campus-map-landscape"] img,
+.vp-doc a[href*="campus-map-official"] img {
   display: block;
   width: 100%;
   max-height: 72vh;
@@ -432,7 +434,8 @@ html {
   background: #fff;
 }
 
-.vp-doc p:has(a[href*="campus-map-landscape"]) {
+.vp-doc p:has(a[href*="campus-map-landscape"]),
+.vp-doc p:has(a[href*="campus-map-official"]) {
   opacity: 1;
   transform: none;
 }
@@ -930,13 +933,15 @@ html {
   }
 
   .vp-doc .zoomable-map,
-  .vp-doc a[href*="campus-map-landscape"] {
+  .vp-doc a[href*="campus-map-landscape"],
+  .vp-doc a[href*="campus-map-official"] {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
   }
 
   .vp-doc .zoomable-map img,
-  .vp-doc a[href*="campus-map-landscape"] img {
+  .vp-doc a[href*="campus-map-landscape"] img,
+  .vp-doc a[href*="campus-map-official"] img {
     width: 100vw;
     max-width: none;
     border-radius: 0;

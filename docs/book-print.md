@@ -984,7 +984,7 @@ lastUpdated: false
 
 #### 校区地图
 
-[![校区地图横向版](/images/campus-map-landscape.png)](/images/campus-map-landscape.png)
+[![校区地图高清版](/images/campus-map-official.jpg)](/images/campus-map-official.jpg)
 
 点击地图可放大查看。
 

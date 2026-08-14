@@ -3,7 +3,7 @@ import { onMounted, watch, ref } from 'vue'
 import { useData } from 'vitepress'
 import './custom.css'
 
-const zoomableImageSelector = '.zoomable-map, a[href*="campus-map-landscape"]'
+const zoomableImageSelector = '.zoomable-map, a[href*="campus-map-official"], a[href*="campus-map-landscape"]'
 
 function focusLocalSearchInput() {
   const input = document.querySelector<HTMLInputElement>('#localsearch-input, .search-input')
