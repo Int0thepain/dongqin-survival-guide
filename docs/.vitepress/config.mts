@@ -2,9 +2,8 @@ import { defineConfig } from 'vitepress'
 
 const repoName = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'dongqin-survival-guide'
 const base = process.env.VITEPRESS_BASE ?? (process.env.GITHUB_ACTIONS ? `/${repoName}/` : '/')
-const siteUrl = 'https://int0thepain.github.io/dongqin-survival-guide'
 const repoUrl = 'https://github.com/Int0thepain/dongqin-survival-guide'
-const pdfUrl = `${siteUrl}/downloads/dongqin-survival-guide.pdf`
+const pdfUrl = '/downloads/dongqin-survival-guide.pdf'
 
 export default defineConfig({
   title: '东秦生存手册',

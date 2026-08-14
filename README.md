@@ -6,6 +6,8 @@
 
 **下载 PDF**：[dongqin-survival-guide.pdf](https://int0thepain.github.io/dongqin-survival-guide/downloads/dongqin-survival-guide.pdf)
 
+Cloudflare Pages 备用部署后，也可以在 Cloudflare 站点顶部点击“下载 PDF”，文件由 `docs/public/downloads/` 随站点一起发布。
+
 本仓库适合继续扩展为班级版、年级版或公开网页版生存手册。当前内容先按主题拆分，方便后续在 GitHub、GitHub Pages、VitePress 或其他文档站中维护。
 
 ## 网站预览

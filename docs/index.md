@@ -20,7 +20,7 @@ hero:
       link: /book-print
     - theme: alt
       text: 📥 下载 PDF
-      link: https://int0thepain.github.io/dongqin-survival-guide/downloads/dongqin-survival-guide.pdf
+      link: /downloads/dongqin-survival-guide.pdf
 
 features:
   - icon: 📋
@@ -53,7 +53,7 @@ features:
 <div class="mobile-bottom-actions">
   <a href="./book-print">全书</a>
   <button type="button" onclick="document.querySelector('.DocSearch-Button')?.click()">搜索</button>
-  <a href="https://int0thepain.github.io/dongqin-survival-guide/downloads/dongqin-survival-guide.pdf">PDF</a>
+  <a href="./downloads/dongqin-survival-guide.pdf">PDF</a>
 </div>
 
 ## 📌 当前状态
