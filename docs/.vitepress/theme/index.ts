@@ -72,6 +72,50 @@ function setupReadingProgress() {
   updateProgress()
 }
 
+function setupZoomableImages() {
+  document.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement | null
+    const link = target?.closest<HTMLAnchorElement>('.zoomable-map, a[href*="campus-map-landscape"]')
+    const heroImage = target?.closest<HTMLImageElement>('.VPHero .image-src')
+
+    if (!link && !heroImage) return
+
+    event.preventDefault()
+
+    const image = link?.querySelector<HTMLImageElement>('img') ?? heroImage
+    const src = link?.href || heroImage?.src || image?.src
+    if (!src) return
+
+    const overlay = document.createElement('div')
+    overlay.className = 'image-lightbox'
+    overlay.innerHTML = `
+      <button class="image-lightbox-close" type="button" aria-label="关闭大图">×</button>
+      <img src="${src}" alt="${image?.alt ?? '放大图片'}" />
+    `
+
+    const close = () => {
+      overlay.remove()
+      document.body.classList.remove('image-lightbox-open')
+      document.removeEventListener('keydown', onKeydown)
+    }
+
+    const onKeydown = (keyboardEvent: KeyboardEvent) => {
+      if (keyboardEvent.key === 'Escape') close()
+    }
+
+    overlay.addEventListener('click', (clickEvent) => {
+      const clicked = clickEvent.target as HTMLElement
+      if (clicked === overlay || clicked.closest('.image-lightbox-close')) {
+        close()
+      }
+    })
+
+    document.body.appendChild(overlay)
+    document.body.classList.add('image-lightbox-open')
+    document.addEventListener('keydown', onKeydown)
+  })
+}
+
 export default {
   extends: DefaultTheme,
   setup() {
@@ -104,6 +148,7 @@ export default {
       setupScrollAnimations()
       setupSmoothScroll()
       setupReadingProgress()
+      setupZoomableImages()
     })
 
     // 页面切换时重新初始化动画

@@ -189,6 +189,14 @@ html {
   transform: translateY(-1px);
 }
 
+.VPHero .image-src {
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: var(--vp-shadow-3);
+  cursor: zoom-in;
+}
+
 /* -----------------------------------------------------
    5. 特性卡片美化
    ----------------------------------------------------- */
@@ -404,6 +412,80 @@ html {
 
 .vp-doc img:hover {
   transform: scale(1.01);
+}
+
+.vp-doc .zoomable-map,
+.vp-doc a[href*="campus-map-landscape"] {
+  display: block;
+  margin: 22px 0 10px;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+.vp-doc .zoomable-map img,
+.vp-doc a[href*="campus-map-landscape"] img {
+  display: block;
+  width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  background: #fff;
+}
+
+.vp-doc p:has(a[href*="campus-map-landscape"]) {
+  opacity: 1;
+  transform: none;
+}
+
+.vp-doc .zoomable-map span {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--vp-c-brand-1);
+}
+
+.image-lightbox-open {
+  overflow: hidden;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  background: rgba(15, 23, 42, 0.86);
+  cursor: zoom-out;
+}
+
+.image-lightbox img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(96vw, 1600px);
+  max-height: 92vh;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+  cursor: default;
+}
+
+.image-lightbox-close {
+  position: fixed;
+  top: 14px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.72);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
 }
 
 /* 分隔线 */
@@ -694,7 +776,6 @@ html {
 .vp-doc ul,
 .vp-doc ol,
 .vp-doc table,
-.vp-doc img,
 .vp-doc .notice-danger {
   opacity: 0;
   transform: translateY(16px);
@@ -708,7 +789,6 @@ html {
 .vp-doc ul.animate-fade-in-up,
 .vp-doc ol.animate-fade-in-up,
 .vp-doc table.animate-fade-in-up,
-.vp-doc img.animate-fade-in-up,
 .vp-doc .notice-danger.animate-fade-in-up {
   opacity: 1;
   transform: translateY(0);
@@ -720,8 +800,7 @@ html {
 .vp-doc p.animate-fade-in-up { transition-delay: 0.1s; }
 .vp-doc ul.animate-fade-in-up, .vp-doc ol.animate-fade-in-up { transition-delay: 0.12s; }
 .vp-doc table.animate-fade-in-up { transition-delay: 0.15s; }
-.vp-doc img.animate-fade-in-up { transition-delay: 0.18s; }
-.vp-doc .notice-danger.animate-fade-in-up { transition-delay: 0.2s; }
+  .vp-doc .notice-danger.animate-fade-in-up { transition-delay: 0.2s; }
 
 /* -----------------------------------------------------
    13. 响应式适配
@@ -748,6 +827,17 @@ html {
   .VPHero .tagline {
     font-size: 15px !important;
     line-height: 1.6 !important;
+  }
+
+  .VPHero .image {
+    display: flex !important;
+    justify-content: center;
+    margin: 18px auto 0 !important;
+  }
+
+  .VPHero .image-src {
+    max-width: min(86vw, 340px) !important;
+    max-height: 190px !important;
   }
 
   .VPHero .actions {
@@ -793,6 +883,28 @@ html {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+  }
+
+  .vp-doc .zoomable-map,
+  .vp-doc a[href*="campus-map-landscape"] {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
+  .vp-doc .zoomable-map img,
+  .vp-doc a[href*="campus-map-landscape"] img {
+    width: 100vw;
+    max-width: none;
+    border-radius: 0;
+  }
+
+  .image-lightbox {
+    padding: 12px;
+  }
+
+  .image-lightbox img {
+    max-width: 98vw;
+    max-height: 86vh;
   }
 }
 
