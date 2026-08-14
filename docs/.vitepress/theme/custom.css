@@ -551,7 +551,13 @@ html {
   place-items: center;
   padding: 12px;
   overscroll-behavior: contain;
+  touch-action: none;
+  user-select: none;
   cursor: grab;
+}
+
+.image-lightbox-stage.is-dragging {
+  cursor: grabbing;
 }
 
 .image-lightbox-stage img {
@@ -563,9 +569,13 @@ html {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
-  cursor: zoom-in;
+  pointer-events: none;
   transform-origin: center center;
   transition: transform 0.12s ease-out;
+}
+
+.image-lightbox-stage.is-dragging img {
+  transition: none;
 }
 
 .image-lightbox-close {

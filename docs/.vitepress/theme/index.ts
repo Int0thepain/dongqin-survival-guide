@@ -104,12 +104,21 @@ function setupZoomableImages() {
     `
 
     const lightboxImage = overlay.querySelector<HTMLImageElement>('.image-lightbox-stage img')
+    const stage = overlay.querySelector<HTMLElement>('.image-lightbox-stage')
     const zoomValue = overlay.querySelector<HTMLElement>('.image-lightbox-zoom-value')
     let scale = 1
+    let translateX = 0
+    let translateY = 0
+    let isDragging = false
+    let didDrag = false
+    let dragStartX = 0
+    let dragStartY = 0
+    let dragOriginX = 0
+    let dragOriginY = 0
 
     const updateScale = () => {
       if (!lightboxImage || !zoomValue) return
-      lightboxImage.style.transform = `scale(${scale})`
+      lightboxImage.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`
       zoomValue.textContent = `${Math.round(scale * 100)}%`
     }
 
@@ -120,6 +129,8 @@ function setupZoomableImages() {
 
     const resetZoom = () => {
       scale = 1
+      translateX = 0
+      translateY = 0
       updateScale()
     }
 
@@ -150,10 +161,50 @@ function setupZoomableImages() {
         resetZoom()
         return
       }
+      if (didDrag) {
+        didDrag = false
+        return
+      }
       if (clicked === overlay || clicked.closest('.image-lightbox-close')) {
         close()
       }
     })
+
+    stage?.addEventListener('pointerdown', (pointerEvent) => {
+      if (pointerEvent.button !== 0 && pointerEvent.pointerType === 'mouse') return
+      pointerEvent.preventDefault()
+      isDragging = true
+      didDrag = false
+      dragStartX = pointerEvent.clientX
+      dragStartY = pointerEvent.clientY
+      dragOriginX = translateX
+      dragOriginY = translateY
+      stage.classList.add('is-dragging')
+      stage.setPointerCapture(pointerEvent.pointerId)
+    })
+
+    stage?.addEventListener('pointermove', (pointerEvent) => {
+      if (!isDragging) return
+      const dx = pointerEvent.clientX - dragStartX
+      const dy = pointerEvent.clientY - dragStartY
+      if (Math.abs(dx) > 2 || Math.abs(dy) > 2) didDrag = true
+      translateX = dragOriginX + dx
+      translateY = dragOriginY + dy
+      updateScale()
+    })
+
+    const stopDragging = (pointerEvent: PointerEvent) => {
+      if (!isDragging) return
+      isDragging = false
+      stage?.classList.remove('is-dragging')
+      if (stage?.hasPointerCapture(pointerEvent.pointerId)) {
+        stage.releasePointerCapture(pointerEvent.pointerId)
+      }
+    }
+
+    stage?.addEventListener('pointerup', stopDragging)
+    stage?.addEventListener('pointercancel', stopDragging)
+    stage?.addEventListener('pointerleave', stopDragging)
 
     overlay.addEventListener(
       'wheel',
