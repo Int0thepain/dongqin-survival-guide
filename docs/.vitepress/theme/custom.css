@@ -197,6 +197,34 @@ html {
   cursor: zoom-in;
 }
 
+.VPHero .image {
+  position: relative;
+}
+
+.VPHero .image::after {
+  content: '点击放大 / 滚轮缩放';
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 1;
+  padding: 6px 10px;
+  color: #fff;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.VPHero .image:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* -----------------------------------------------------
    5. 特性卡片美化
    ----------------------------------------------------- */
@@ -446,6 +474,16 @@ html {
   font-size: 14px;
   text-align: center;
   color: var(--vp-c-brand-1);
+}
+
+.vp-doc a[href*="campus-map-official"]::after {
+  content: '点击放大 / 滚轮缩放';
+  display: block;
+  margin-top: 8px;
+  color: var(--vp-c-brand-1);
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
 }
 
 .image-lightbox-open {

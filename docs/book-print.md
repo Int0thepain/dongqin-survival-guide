@@ -987,6 +987,7 @@ lastUpdated: false
 [![校区地图高清版](/images/campus-map-official.jpg)](/images/campus-map-official.jpg)
 
 点击地图可放大查看。
+放大后可使用鼠标滚轮缩放，并在顶部查看当前缩放比例。
 
 原始 PDF 附件页留档：[竖版原图](/images/campus-map.png)。
 
