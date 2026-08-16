@@ -22,7 +22,14 @@ export default defineConfig({
       { text: '阅读指南', link: '/00-项目说明与更新规则' },
       { text: '全书阅读', link: '/book-print' },
       { text: '下载 PDF', link: pdfUrl },
-      { text: '待补充', link: '/TODO-可补充内容' },
+      {
+        text: '共建',
+        items: [
+          { text: '更新日志', link: '/17-更新日志' },
+          { text: '贡献榜', link: '/18-贡献榜' },
+          { text: '待补充', link: '/TODO-可补充内容' }
+        ]
+      },
       { text: 'GitHub 仓库', link: repoUrl }
     ],
     sidebar: [
@@ -66,6 +73,8 @@ export default defineConfig({
           { text: '重要联系方式与安全', link: '/10-重要联系方式与安全' },
           { text: '地图与电话簿', link: '/12-附件地图与电话簿' },
           { text: '校园社群与信息渠道', link: '/16-校园社群与信息渠道' },
+          { text: '更新日志', link: '/17-更新日志' },
+          { text: '贡献榜', link: '/18-贡献榜' },
           { text: '可补充内容清单', link: '/TODO-可补充内容' },
           { text: '全书阅读版', link: '/book-print' }
         ]

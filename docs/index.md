@@ -60,6 +60,17 @@ features:
 
 本项目目前是从《东北大学(秦皇岛)2026届新生入学生活指南.pdf》转换整理出的基础版。后续可以继续补充班级经验、专业经验、选课考试、竞赛科研、保研考研和实习就业等内容。
 
+<div class="home-link-grid">
+  <a class="home-link-card" href="./17-更新日志">
+    <strong>更新日志</strong>
+    <span>查看各版本主要改动</span>
+  </a>
+  <a class="home-link-card" href="./18-贡献榜">
+    <strong>贡献榜</strong>
+    <span>感谢参与共建的同学</span>
+  </a>
+</div>
+
 <div class="notice-danger">
 <h2>⚠️ 免责声明</h2>
 <p>请注意，本手册为<strong>非官方内容整理</strong>，主要来源于公开资料、补充材料和同学经验记录，仅供学习、生活参考。由于学校政策、系统入口、收费标准、宿舍安排、课程要求等内容可能随时间调整，手册内容存在过时、遗漏或理解偏差的风险。</p>

@@ -1072,6 +1072,100 @@ lastUpdated: false
 公开网页只保留“如何获取”的说明，<span class="mark-green">二维码建议放在班级群公告、腾讯文档或私密文档中。</span>
 
 
+### 更新日志
+
+<!-- meta:start -->
+> 最后更新：2026-08-17  
+> 信息来源：项目维护记录与公开仓库提交记录
+<!-- meta:end -->
+
+这里记录《东秦生存手册》各版本主要改动，方便同学们快速了解哪些内容被更新过、哪些地方仍需要继续核验。
+
+#### 第二版（当前版本）
+
+> 更新时间：2026-08-17
+
+- 修正了与宿舍相关的错误内容和容易产生误解的表述，尽量区分校内宿舍、鹏远公寓及不同楼栋之间的差异。
+- 加入了更明显的页面动态效果与交互体验，包括首页视觉优化、页面动效、主题细节调整等。
+- 优化校园地图展示，替换为学校官网高清地图，并支持点击放大、鼠标滚轮缩放、拖动平移和缩放比例显示。
+- 补充并优化网站访问方式，除 GitHub Pages 外，也部署到 Cloudflare Pages，方便同学们多一个访问入口。
+- 增加免责声明、联系方式、贡献入口和部分站点说明，便于后续持续维护。
+
+#### 初版
+
+> 整理时间：2026-08-12
+
+- 将《东北大学(秦皇岛)2026届新生入学生活指南.pdf》和补充材料整理为 Markdown 文档。
+- 按“入学篇、生活篇、学习与经验篇、附录”等结构重新分类，便于网页阅读和后续更新。
+- 初步搭建 VitePress 网站，支持章节阅读、全书阅读、站内搜索和 PDF 下载。
+- 保留资料来源与最后更新时间，建立后续校对和投稿的基本规则。
+
+#### 维护说明
+
+如果你发现某一项内容已经过时，欢迎通过 [GitHub Issues](https://github.com/Int0thepain/dongqin-survival-guide/issues) 或首页联系方式反馈。反馈时最好说明信息来源、适用范围和大致时间，这样更方便后续核验。
+
+
+### 贡献榜
+
+<!-- meta:start -->
+> 最后更新：2026-08-17  
+> 信息来源：GitHub 公开 contributors 与手册维护记录
+<!-- meta:end -->
+
+感谢每一位愿意补充资料、指出错误、提供建议、参与设计和维护的同学。这个手册能变得更可靠，靠的不是某一个人，而是大家一点一点把真实经验补上来。
+
+#### GitHub Contributors
+
+<div class="contributor-grid">
+  <a class="contributor-card" href="https://github.com/Int0thepain" target="_blank" rel="noreferrer">
+    <img src="https://avatars.githubusercontent.com/u/258345706?v=4" alt="Int0thepain 的 GitHub 头像">
+    <div>
+      <h3>Int0thepain</h3>
+      <p>项目发起、内容整理、站点搭建与长期维护。</p>
+    </div>
+  </a>
+  <a class="contributor-card" href="https://github.com/GianniY3458" target="_blank" rel="noreferrer">
+    <img src="https://avatars.githubusercontent.com/u/243726974?v=4" alt="GianniY3458 的 GitHub 头像">
+    <div>
+      <h3>GianniY3458</h3>
+      <p>前端外观升级与交互体验贡献。</p>
+    </div>
+  </a>
+</div>
+
+#### 手动鸣谢
+
+后续可以把没有 GitHub 链接、但为手册提供过资料或建议的同学放在这里。建议只写同学愿意公开的头像和网名，不放真实姓名、手机号、学号、宿舍号等隐私信息。
+
+<div class="contributor-grid">
+  <article class="contributor-card contributor-card-muted">
+    <div class="contributor-avatar-placeholder">待</div>
+    <div>
+      <h3>待补充</h3>
+      <p>这里可以放提供资料、纠错、设计建议或内容核验的同学。</p>
+    </div>
+  </article>
+</div>
+
+<!--
+手动添加贡献者时，可以复制下面这个模板：
+
+<article class="contributor-card">
+  <img src="/images/contributors/你的图片文件名.jpg" alt="网名的头像">
+  <div>
+    <h3>网名</h3>
+    <p>贡献说明，例如：补充宿舍经验、核验快递信息、提供食堂建议。</p>
+  </div>
+</article>
+-->
+
+#### 如何参与
+
+- 发现错误：请说明页面位置、问题内容和你认为更准确的说法。
+- 补充经验：请尽量写清适用范围，例如年级、学院、宿舍区域或时间。
+- 提供资料：请优先提供可公开引用的信息，避免上传包含个人隐私的截图。
+
+
 ### 可补充内容清单
 
 <!-- meta:start -->
