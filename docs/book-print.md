@@ -1109,12 +1109,12 @@ lastUpdated: false
 
 <!-- meta:start -->
 > 最后更新：2026-08-17  
-> 信息来源：GitHub 公开 contributors 与手册维护记录
+> 信息来源：公开主页与手册维护记录
 <!-- meta:end -->
 
 感谢每一位愿意补充资料、指出错误、提供建议、参与设计和维护的同学。这个手册能变得更可靠，靠的不是某一个人，而是大家一点一点把真实经验补上来。
 
-#### GitHub Contributors
+#### 贡献者
 
 <div class="contributor-grid">
   <a class="contributor-card" href="https://github.com/Int0thepain" target="_blank" rel="noreferrer">
@@ -1131,20 +1131,13 @@ lastUpdated: false
       <p>前端外观升级与交互体验贡献。</p>
     </div>
   </a>
-</div>
-
-#### 手动鸣谢
-
-后续可以把没有 GitHub 链接、但为手册提供过资料或建议的同学放在这里。建议只写同学愿意公开的头像和网名，不放真实姓名、手机号、学号、宿舍号等隐私信息。
-
-<div class="contributor-grid">
-  <article class="contributor-card contributor-card-muted">
-    <div class="contributor-avatar-placeholder">待</div>
+  <a class="contributor-card" href="https://github.com/Evernight317" target="_blank" rel="noreferrer">
+    <img src="https://github.com/Evernight317.png" alt="Evernight317 的 GitHub 头像">
     <div>
-      <h3>待补充</h3>
-      <p>这里可以放提供资料、纠错、设计建议或内容核验的同学。</p>
+      <h3>Evernight317</h3>
+      <p>动态效果与页面交互体验贡献。</p>
     </div>
-  </article>
+  </a>
 </div>
 
 <!--
