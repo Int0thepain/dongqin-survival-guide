@@ -1930,10 +1930,10 @@ lastUpdated: false
       <p>项目发起、内容整理、站点搭建与长期维护。</p>
     </div>
   </a>
-  <a class="contributor-card" href="https://github.com/hwany1458" target="_blank" rel="noreferrer">
-    <img src="https://github.com/hwany1458.png" alt="hwany1458 的 GitHub 头像">
+  <a class="contributor-card" href="https://github.com/GianniY3458" target="_blank" rel="noreferrer">
+    <img src="https://github.com/GianniY3458.png" alt="GianniY3458 的 GitHub 头像">
     <div>
-      <h3>hwany1458</h3>
+      <h3>GianniY3458</h3>
       <p>提出问题反馈，帮助修正和完善手册内容。</p>
     </div>
   </a>
