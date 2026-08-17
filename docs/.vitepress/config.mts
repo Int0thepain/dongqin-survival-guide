@@ -44,6 +44,7 @@ export default defineConfig({
         text: '入学篇',
         items: [
           { text: '报到入学', link: '/02-报到入学' },
+          { text: '入学前准备清单', link: '/23-入学前准备清单' },
           { text: '军训与智慧校园', link: '/03-军训与智慧校园' },
           { text: '学费缴费与证件', link: '/09-学费缴费与证件' }
         ]
@@ -64,6 +65,9 @@ export default defineConfig({
         items: [
           { text: '学习场所与校园跑', link: '/06-学习场所与校园跑' },
           { text: '学习选课与成绩 FAQ', link: '/14-学习选课与成绩FAQ' },
+          { text: '转专业与专业分流', link: '/19-转专业与专业分流' },
+          { text: '保研考研与就业', link: '/20-保研考研与就业' },
+          { text: '奖学金综测与竞赛', link: '/21-奖学金综测与竞赛' },
           { text: '学长学姐经验', link: '/11-学长学姐经验' }
         ]
       },
@@ -72,6 +76,7 @@ export default defineConfig({
         items: [
           { text: '重要联系方式与安全', link: '/10-重要联系方式与安全' },
           { text: '地图与电话簿', link: '/12-附件地图与电话簿' },
+          { text: '校园建筑与办事地点', link: '/22-校园建筑与办事地点' },
           { text: '校园社群与信息渠道', link: '/16-校园社群与信息渠道' },
           { text: '更新日志', link: '/17-更新日志' },
           { text: '贡献榜', link: '/18-贡献榜' },

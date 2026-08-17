@@ -41,12 +41,16 @@ features:
 
 <div class="mobile-quick">
   <a href="./02-报到入学">报到入学</a>
+  <a href="./23-入学前准备清单">准备清单</a>
   <a href="./13-宿舍详解与选择建议">宿舍</a>
   <a href="./05-饮食指南">食堂</a>
   <a href="./03-军训与智慧校园">校园卡/军训</a>
   <a href="./14-学习选课与成绩FAQ">选课成绩</a>
+  <a href="./19-转专业与专业分流">转专业/分流</a>
+  <a href="./20-保研考研与就业">升学就业</a>
   <a href="./15-生活常见问题">生活 FAQ</a>
   <a href="./16-校园社群与信息渠道">信息渠道</a>
+  <a href="./22-校园建筑与办事地点">建筑/办事</a>
   <a href="./TODO-可补充内容">待补充</a>
 </div>
 
@@ -68,6 +72,18 @@ features:
   <a class="home-link-card" href="./18-贡献榜">
     <strong>贡献榜</strong>
     <span>感谢参与共建的同学</span>
+  </a>
+  <a class="home-link-card" href="./19-转专业与专业分流">
+    <strong>转专业与专业分流</strong>
+    <span>理解分流、转专业条件和准备重点</span>
+  </a>
+  <a class="home-link-card" href="./20-保研考研与就业">
+    <strong>保研考研与就业</strong>
+    <span>提前了解升学与求职路径</span>
+  </a>
+  <a class="home-link-card" href="./21-奖学金综测与竞赛">
+    <strong>奖学金综测与竞赛</strong>
+    <span>看懂绩点、综测和竞赛的关系</span>
   </a>
 </div>
 
