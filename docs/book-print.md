@@ -1944,6 +1944,13 @@ lastUpdated: false
       <p>前端外观升级、动态效果与页面交互体验贡献。</p>
     </div>
   </a>
+  <a class="contributor-card" href="https://github.com/YINGXIAOHAN-lab" target="_blank" rel="noreferrer">
+    <img src="https://github.com/YINGXIAOHAN-lab.png" alt="YINGXIAOHAN-lab 的 GitHub 头像">
+    <div>
+      <h3>YINGXIAOHAN-lab</h3>
+      <p>参与手册共建与后续完善。</p>
+    </div>
+  </a>
 </div>
 
 <p class="contributor-easter-egg">
