@@ -619,6 +619,58 @@ html {
   font-size: 14px;
 }
 
+.campus-tips {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.3fr);
+  gap: 22px;
+  margin: 20px 0 34px;
+  padding: 22px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(79, 70, 229, 0.08), transparent 42%),
+    var(--vp-c-bg-soft);
+  box-shadow: var(--vp-shadow-1);
+}
+
+.campus-tips-kicker {
+  margin: 0 0 8px !important;
+  color: var(--vp-c-brand-1);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.campus-tips h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  color: var(--vp-c-text-1);
+  font-size: 22px;
+  line-height: 1.45;
+}
+
+.campus-tips h2::before {
+  display: none;
+}
+
+.campus-tip-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.campus-tip-grid p {
+  min-height: 76px;
+  margin: 0 !important;
+  padding: 14px 16px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
 .contributor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -683,10 +735,102 @@ html {
   border-style: dashed;
 }
 
+.contributor-easter-egg {
+  margin: 4px 0 34px !important;
+  padding: 12px 16px;
+  border: 1px dashed var(--vp-c-brand-2);
+  border-radius: 8px;
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-text-2);
+  font-size: 14px;
+  text-align: center;
+}
+
+.contributor-easter-egg a {
+  font-weight: 700;
+}
+
+.not-found-easter-egg {
+  max-width: 720px;
+  margin: 84px auto 48px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.not-found-code {
+  margin: 0 0 14px !important;
+  color: var(--vp-c-brand-1);
+  font-size: 76px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.not-found-easter-egg h1 {
+  margin: 0 0 16px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  font-size: 34px;
+}
+
+.not-found-easter-egg h1::after {
+  display: none;
+}
+
+.not-found-easter-egg p {
+  color: var(--vp-c-text-2);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.not-found-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.not-found-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+.not-found-actions a:first-child {
+  color: #fff;
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+}
+
 @media (max-width: 640px) {
   .home-link-grid,
   .contributor-grid {
     grid-template-columns: 1fr;
+  }
+
+  .campus-tips {
+    grid-template-columns: 1fr;
+    padding: 18px;
+  }
+
+  .campus-tip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .not-found-code {
+    font-size: 60px;
+  }
+
+  .not-found-easter-egg h1 {
+    font-size: 26px;
   }
 
   .contributor-card {

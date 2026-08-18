@@ -1912,7 +1912,7 @@ lastUpdated: false
 ### 贡献榜
 
 <!-- meta:start -->
-> 最后更新：2026-08-17  
+> 最后更新：2026-08-18  
 > 信息来源：公开主页与手册维护记录
 <!-- meta:end -->
 
@@ -1945,6 +1945,11 @@ lastUpdated: false
     </div>
   </a>
 </div>
+
+<p class="contributor-easter-egg">
+  如果你看到了这里，说明你已经具备成为贡献者的潜质。
+  <a href="https://github.com/Int0thepain/dongqin-survival-guide/issues" target="_blank" rel="noreferrer">去留下一条补充或勘误</a>
+</p>
 
 <!--
 手动添加贡献者时，可以复制下面这个模板：

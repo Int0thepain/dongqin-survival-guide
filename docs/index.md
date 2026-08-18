@@ -60,6 +60,19 @@ features:
   <a href="./downloads/dongqin-survival-guide.pdf">PDF</a>
 </div>
 
+<section class="campus-tips" aria-labelledby="campus-tips-title">
+  <div>
+    <p class="campus-tips-kicker">东秦小贴士</p>
+    <h2 id="campus-tips-title">一些不写进通知里，但很快会用上的经验</h2>
+  </div>
+  <div class="campus-tip-grid">
+    <p>不要低估秦皇岛的风，尤其是你刚整理好发型的时候。</p>
+    <p>能提前办完的手续，尽量不要留给开学第一周。</p>
+    <p>打印店不是万能的，但很多时候已经很接近万能。</p>
+    <p>宿舍建议多问几个人，单一样本很容易把偶然当规律。</p>
+  </div>
+</section>
+
 ## 📌 当前状态
 
 本项目目前是从《东北大学(秦皇岛)2026届新生入学生活指南.pdf》转换整理出的基础版。后续可以继续补充班级经验、专业经验、选课考试、竞赛科研、保研考研和实习就业等内容。
